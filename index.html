@@ -3,25 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <title>SpendWise</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <aside>
-            <h1>SpendWise</h1>
+        <aside class="sidebar">
+            <h1 class="heading">SpendWise</h1>
             <nav>
-                <button><a href="dashboard.html">Dashboard</a></button><br> 
-                <button><a href="Transaction.html">Transactions</a></button><br>
-                <button><a href="Analytics.html">Analytics</a></button><br>
-                <button><a href="Budget.html">Budget</a></button><br>
-                <button><a href="Goals.html">Goals</a></button><br>
-                <button><a href="Reports.html">Reports</a></button><br>
+                <button class="btn"><a class="dashboard" href="dashboard.html">Dashboard</a></button><br> 
+                <button class="btn"><a class="transactions" href="Transaction.html">Transactions</a></button><br>
+                <button class="btn"><a class="analytics" href="Analytics.html">Analytics</a></button><br>
+                <button class="btn"><a class="budget" href="Budget.html">Budget</a></button><br>
+                <button class="btn"><a class="goals" href="Goals.html">Goals</a></button><br>
+                <button class="btn"><a class="reports" href="Reports.html">Reports</a></button><br>
             </nav>
-            <p>Small steps. <br> Big financial goals</p>
+            <p class="tagline">Small steps. <br> Big financial goals</p>
         </aside>
 
-        <main>
-            <section>
+        <main class="main-content">
+            <section class="header">
+                <div class="search-container">
+                    <span class="search-icon">&#128269;</span>
+                    <input type="text" placeholder="Search transactions..." class="search-bar">
+                </div>
+                <div class="bell-icon">
+                    <p>&#x1F514</p>
+                 </div>
+                 
+            </section>
+            <section class="spendwise">
                 <h2>Welcome to SpendWise</h2>
                 <p>Your personal finance management tool.</p>
+            </section>
+            <section class="financial-summary">
+                <div class="balance">
+                    <h4>Current Balance</h4>
+                    <p>$3,500</p>
+                </div>
+                <div class="spent">
+                    <h4>Total Spent</h4>
+                    <p>$1,200</p>
+                </div>
+                <div class="income">
+                    <h4>Total Income</h4>
+                    <p>$2,500</p>
+                </div>
+                <div class="savings">
+                    <h4>Savings</h4>
+                    <p>$1,300</p>
+                </div>
+            </section>
+            <section class="spending">
+                <div><h4>Spending Overview  </h4></div>
             </section>
         </main>
     </body>
