@@ -7,7 +7,7 @@
     </head>
     <body>
         <aside class="sidebar">
-            <h1 class="heading">SpendWise</h1>
+            <p class="heading"><i>Spend</i><b>Wise</b></p>
             <nav>
                 <button class="btn"><a class="dashboard" href="dashboard.html">Dashboard</a></button><br> 
                 <button class="btn"><a class="transactions" href="Transaction.html">Transactions</a></button><br>
@@ -28,7 +28,9 @@
                 <div class="bell-icon">
                     <p>&#x1F514</p>
                  </div>
-                 
+                <div class="account-container">
+                    <p class="account">H</p>
+                </div> 
             </section>
             <section class="spendwise">
                 <h2>Welcome to SpendWise</h2>
@@ -36,25 +38,69 @@
             </section>
             <section class="financial-summary">
                 <div class="balance">
-                    <h4>Current Balance</h4>
+                    <div class="balance-icon">
+                    <h3>Current Balance</h3>
+                    <p class="fs-icon">&#128176</p>
+                    </div>
                     <p>$3,500</p>
                 </div>
                 <div class="spent">
-                    <h4>Total Spent</h4>
+                    <div class="spent-icon">
+                    <h3 >Total Spent</h3>
+                    <p class="fs-icon">&#128178</p>
+                    </div>
                     <p>$1,200</p>
                 </div>
                 <div class="income">
-                    <h4>Total Income</h4>
+                    <div class="income-icon">
+                    <h3>Total Income</h3>
+                    <p class="fs-icon">&#128179</p>
+                    </div>
                     <p>$2,500</p>
                 </div>
                 <div class="savings">
-                    <h4>Savings</h4>
+                    <div class="savings-icon">
+                    <h3>Savings</h3>
+                    <p class="fs-icon">&#128180</p>
+                    </div>
                     <p>$1,300</p>
                 </div>
             </section>
-            <section class="spending">
-                <div><h4>Spending Overview  </h4></div>
+            <section class="spending-overview">
+                <div class="so-icon">
+                    <h3>Spending Overview</h3>
+                    <div class="spending-chart">
+                    <div class="donut-wrapper">
+                        <canvas id="spendChart"></canvas>
+                        <div class="donut-center">
+                            <h2 id="totalSpent">₹ 0</h2>
+                            <p>Total Spent</p>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script src="script.js"></script>
+                    </div>
+                    <div class="spending-details">
+                        <div class="trans"><p class="s-item">Food & Dining: $400</p></div>
+                        <div class="trans"><p class="s-item">Transportation: $200</p></div>
+                        <div class="trans"><p class="s-item">Entertainment: $150</p></div>
+                        <div class="trans"><p class="s-item">Utilities: $100</p></div>
+                        <div class="trans"><p class="s-item">Healthcare: $250</p></div>
+                        <div class="trans"><p class="s-item">Others: $100</p></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="so-icon">
+                    <h3>Recent Transactions</h3>
+                    <div class="recent-transactions">
+                        <div class="transaction"><p class="t-item">Zomato</p></div>
+                        <div class="transaction"><p class="t-item">Uber</p></div>
+                        <div class="transaction"><p class="t-item">Spotify</p></div>
+                        <div class="transaction"><p class="t-item">Electricity Bill</p></div>
+                        <div class="transaction"><p class="t-item">Amazon</p></div>
+                    </div>
+                </div>
             </section>
         </main>
+        
     </body>
 </html>

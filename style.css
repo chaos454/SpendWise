@@ -1,19 +1,19 @@
 body {
     display: flex;
     margin: 0;
-    min-height: 100vh;
+    height: 100%;
     background-color: #F5F6FC;
+    overflow: hidden;
 }
 .main-content{
     flex: 1;
     padding: 2%;
     background-color: #EEEDFF;
-    min-height: 100vh;
 }
 .sidebar {
     width: 15%;
     padding: 1%;
-    min-height: 100vh;
+    height: 100vh;
     box-sizing: border-box;
     background-color: #101426;
 }
@@ -25,29 +25,32 @@ body {
     background-color: #101426;
     color: white;
     border: none;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 20%;
 }
 .heading{
     color: #f4f1f1;
     margin-bottom: 40%;
     text-align: center;
+    font-size: 200%;
     width: 100%;
 }
 .dashboard,.transactions,.analytics,.budget,.goals,.reports{
     color: #f4f1f1;
+    text-align: left;
     text-decoration: none;
 }
 .tagline{
     color: #f4f1f1;
-    margin-top: 20px;
-    text-align: center;
+    margin-top: auto;
+    text-align: left;
+    margin-left: 20%;
     font-size: 14px;
     font-style: italic;
     text-decoration: none;
-
 }
 .financial-summary {
     background-color: #EEEDFF;
@@ -59,13 +62,19 @@ body {
     flex: 1;
     margin-right: 20px;
     padding: 10px;
-    background-color: #6de8bd;
+    text-align: left;
+    margin-left: 20px;
+    background-color: #FFFFFF;
     border-radius: 8px;
+     box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 10px 24px rgba(0, 0, 0, 0.10);
 }
 .spendwise {
     background-color: #EEEDFF;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
+    font-size: 150%;
 }
 .search-container {
     border-radius: 10px;
@@ -75,7 +84,6 @@ body {
     margin-left: 20px;
     width: 20%;
     display: flex;
-
 }
 .search-bar {
     border: none;
@@ -88,5 +96,93 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+.account-container {
+    display: flex;
+    margin-right: 3%;
+    align-items: center;
+}
+.account{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: #6de8bd;
+    padding: 80%;
+}
+.bell-icon {
+    margin-left: auto;
+    margin-right: 20px;
+}
+.bell-icon p, .account-container p {
+    margin: 0;
+}
+.balance-icon, .spent-icon, .income-icon, .savings-icon {
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+.fs-icon {
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 10%;
+    background-color: #F56D7B;
+}
+.so-icon {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 40px;
+    width: 50%;
+    margin-right: 40px;
+     box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 10px 24px rgba(0, 0, 0, 0.10);
+}
+.spending-overview {
+    display: flex;
+}
+.recent-transactions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.transaction {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.trans{;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+.donut-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+.donut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;   /* lets hover tooltips still work */
+}
+.donut-center h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.donut-center p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #8a8fa3;
+}
+.spending-chart {
+    display: flex;
 }
