@@ -1,0 +1,358 @@
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #101426;
+    padding: 20px;
+}
+body{
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #EEEDff;
+}
+h1, h2, h3, h4, {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.main {
+    flex: 1;
+    padding: 20px;
+    background-color: #EEEDff;
+    width: 100%;
+}
+.btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background:none;
+    background-color: #101426;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+  padding: 0;
+  border-radius: 10px;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+button, select, input {
+  font-family: inherit;
+}
+.btn:hover {
+  background-color: #2a2f4a;
+}
+
+.btn.active {
+  background-color: #5b4bf5;
+}
+
+.btn i {
+  font-size: 20px;
+}
+.heading {
+  margin: 0;
+  color: #f4f1f1;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.heading b {
+  font-weight: 800;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 0 15px;
+  margin-bottom: 30px;
+}
+
+.logo svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.Dashboard, .Transactions, .Analytics, .Budgets, .Goals, .Reports {
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+} 
+.tagline {
+    position: absolute;
+    bottom: 24px;
+    left: 15px;
+    margin: 0px;
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.Total-Balance, .Total-Spent, .Total-Income, .Total-Savings {
+    background-color: #df3131;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+.monthly,.categories,.weekday,.insights {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.analytics-grid h2 {
+  margin: 0 0 16px;
+  font-size: 20px
+}
+.kpis {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.kpis h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+.kpi-card {
+  background: #6de8bd;
+  border-radius: 14px;
+  padding: 20px;
+  min-height: 140px;
+}
+
+.kpi-card h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.kpi-card p {
+  margin: 0 0 6px;
+}
+
+.kpi-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+.insight {
+  background: #f0eeff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.insight h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.insight p {
+  margin: 0;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+.categories ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.categories ul,.weekday ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.categories li {
+  margin-bottom: 0;
+}
+.categories li,.weekday li {
+  margin-bottom: 14px;
+}
+.categories label {
+  display: block;
+  margin-bottom: 8px;
+  font-vavient-numeric: tabular-nums;
+}
+progress {
+  width: 100%;
+  display: block;
+  margin-top: 6px;
+}
+.categories progress {
+  width: 100%;
+  height: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.categories progress::-webkit-progress-bar {
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.categories progress::-webkit-progress-value {
+  background: #3b73f0;
+  border-radius: 6px;
+}
+
+.categories progress::-moz-progress-bar {
+  background: #3b73f0;
+  border-radius: 6px;
+}
+.monthly table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.monthly th,.monthly td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.chart-box {
+  position: relative;
+  height: 280px;          
+  border: 2px dashed #c9c5fb;   
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6384;
+}
+
+.chart-box::before {
+  content: "Graph yahan aayega"; 
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+.main {
+  box-sizing: border-box;
+  height: 100vh;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-head h1 { margin: 0; }.page-head p { margin: 6px 0 0; }.actions {
+  display: flex;
+  gap: 12px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.actions .btn {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.6); 
+  color: #101426;                          
+  border: 1px solid rgba(16, 20, 38, 0.15);
+  border-radius: 12px;
+  font-size: 15px;
+}
+.actions .btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+.select-wrap {
+  position: relative;
+}
+.select-wrap i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #101426;
+  pointer-events: none;
+}
+.actions select.btn {
+  padding-left: 40px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.analytics-grid {
+  flex: 1;
+  min-height: 0;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: 1fr auto;
+  margin-top: 20px;
+  gap: 20px;
+}
+.monthly,.categories,.insights { padding: 20px; }.monthly {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.insights { grid-column: 1 / -1; }
+
+.chart-box {
+  flex: 1;
+  height: auto;
+  min-height: 160px;
+}
+.categories li { margin-bottom: 10px; }
+
+.insight-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.insight { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .app { flex-direction: column; }
+  .main { height: auto; }
+  .analytics-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .insight-list { grid-template-columns: 1fr; }
+}
